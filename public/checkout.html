@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | ShopEase</title>
+
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+ <nav class="navbar">
+
+    <div class="logo">
+
+        <img src="images/logo.png" alt="ShopEase Logo">
+
+        <div>
+            <h2>ShopEase</h2>
+            <span>Shop Smart. Shop Easy.</span>
+        </div>
+
+    </div>
+
+    <div class="nav-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="profile.html">Profile</a>
+
+        <a href="cart.html">🛒 Cart</a>
+
+        <a href="my-orders.html">My Orders</a>
+
+    </div>
+
+</nav>
+
+
+    <!-- CHECKOUT -->
+
+    <section class="checkout-section">
+
+        <div class="section-title">
+
+            <h2>Checkout</h2>
+
+            <p>Enter your delivery details</p>
+
+        </div>
+
+
+        <div class="checkout-box">
+
+            <h3>Delivery Information</h3>
+
+            <div class="form-group">
+
+                <label>Full Name</label>
+
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Enter your full name">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Phone Number</label>
+
+                <input
+                    type="text"
+                    id="customerPhone"
+                    placeholder="Enter phone number">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Address</label>
+
+                <textarea
+                    id="customerAddress"
+                    placeholder="Enter your complete address"
+                    rows="4"></textarea>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Payment Method</label>
+
+                <select id="paymentMethod">
+
+                    <option value="COD">
+                        Cash on Delivery
+                    </option>
+
+                    <option value="ONLINE">
+                        Online Payment
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div id="checkoutTotal" class="checkout-total">
+
+                Total: ₹0
+
+            </div>
+
+
+            <p id="checkoutMessage"></p>
+
+
+            <button
+                class="form-btn"
+                onclick="placeOrder()">
+
+                Place Order
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+    <script>
+
+        window.addEventListener("load", function () {
+
+            loadCheckout();
+
+        });
+
+    </script>
+
+</body>
+
+</html>

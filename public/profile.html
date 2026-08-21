@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile | ShopEase</title>
+<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+    
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+<div class="logo">
+    <img src="images/logo.png" alt="ShopEase Logo">
+    <div>
+        <h2>ShopEase</h2>
+        <span>Shop Smart. Shop Easy.</span>
+
+    </div>
+
+</div>
+
+
+<div class="nav-links">
+
+    <a href="index.html">Home</a>
+
+    <a href="profile.html">Profile</a>
+
+    <a href="cart.html">🛒 Cart</a>
+
+    <a href="my-orders.html">My Orders</a>
+
+</div>
+
+
+</nav>
+
+<!-- ================= PROFILE ================= -->
+
+<section class="profile-section">
+
+<div class="profile-container">
+
+    <h1>
+        Welcome to ShopEase 👋
+    </h1>
+
+    <p>
+        Your account has been logged in successfully.
+    </p>
+
+    <hr>
+
+
+    <!-- ================= USER INFORMATION ================= -->
+
+    <h2>
+        User Information
+    </h2>
+
+    <div class="user-info">
+
+        <p>
+            <strong>User ID:</strong>
+            <span id="userid">Loading...</span>
+        </p>
+
+        <p>
+            <strong>Role:</strong>
+            <span id="role">Loading...</span>
+        </p>
+
+    </div>
+
+
+    <!-- ================= CUSTOMER ORDERS ================= -->
+
+    <div id="customerOrdersSection">
+
+        <hr>
+
+        <h2>
+            🛍️ My Purchased Products
+        </h2>
+
+        <p>
+            Products you have purchased from ShopEase
+        </p>
+
+
+        <div id="profileOrders">
+
+            <p>
+                Loading your orders...
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= BUTTONS ================= -->
+
+    <div class="profile-buttons">
+
+        <button
+            class="form-btn"
+            onclick="window.location.href='index.html'">
+
+            Continue Shopping
+
+        </button>
+
+
+        <button
+            class="logout-btn"
+            onclick="logout()">
+
+            Logout
+
+        </button>
+
+    </div>
+
+</div>
+
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Signup | ShopEase</title>
+
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <img src="images/logo.png" alt="ShopEase Logo">
+
+            <div>
+
+                <h2>ShopEase</h2>
+
+                <span>Shop Smart. Shop Easy.</span>
+
+            </div>
+
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="login.html">Login</a>
+
+        </div>
+
+    </nav>
+
+    <!-- ================= SIGNUP FORM ================= -->
+
+    <div class="form-container">
+
+        <div class="form-box">
+
+            <h2>Create Account</h2>
+
+            <p>Join ShopEase and start shopping today.</p>
+
+            <div class="form-group">
+
+                <label>Username</label>
+
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Enter Username">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    id="emailid"
+                    placeholder="Enter Email Address">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Phone Number</label>
+
+                <input
+                    type="text"
+                    id="phone"
+                    placeholder="Enter Phone Number">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Password</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter Password">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Role</label>
+
+                <select id="role">
+
+                    <option value="customer">Customer</option>
+
+                    <option value="vendor">Vendor</option>
+
+                </select>
+
+            </div>
+
+            <button
+                class="form-btn"
+                onclick="signup()">
+
+                Create Account
+
+            </button>
+
+            <p
+                id="message"
+                style="margin-top:15px;text-align:center;color:red;">
+
+            </p>
+
+            <div class="form-footer">
+
+                Already have an account?
+
+                <a href="login.html">
+
+                    Login Here
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
